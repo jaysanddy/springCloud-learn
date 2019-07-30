@@ -1,0 +1,12 @@
+server:
+  port: 8761
+eureka:
+  instance:
+    hostname: localhost
+  server:
+    enable-self-preservation: false #Eureka自我保护机制，关闭可以精确的剔除不健康的节点
+  client:
+    registerWithEureka: false #是否注册在Eureka上因为是服务端所以不需要注册
+    fetchRegistry: false
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/

@@ -1,0 +1,12 @@
+sever:
+  port: 8280
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          url: https://github.com/cd826/SpringcloudSamplesConfig
+          username: 2860958967@qq.com
+          password: panshenghao321
